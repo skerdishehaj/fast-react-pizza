@@ -62,3 +62,15 @@ Currently, two official plugins are available:
 |Styling|Tailwind CSS|Trendy way of styling applications|
 |Remote State Management|React Router|New way of fetching data right inside React Router (*v6.4+*) that is worth exploring ("**render-as-you-fetch**" instead of "**fetch-on-render**"). Not really state ***management***, as it does not persist state|
 |UI State Management|Redux|State is fairly complex. Redux has many advantages for UI state|
+
+---
+
+#### This project is organized in a feature-based structure
+
+|Folder|Explanation|
+|:---:|:---:|
+|features|all feature components|
+|ui|all other ***reusuable presentational componenets*** such as Buttons, Inputs, etc|
+|services|reusuable code for ***interacting with an API***|
+|utilities|***resusuable stateless helper*** functions that we can re-use on multiple places on the app, taht do not *create any side-effects*|
+|pages & hooks| will be included in the corrensponding feature folder|
