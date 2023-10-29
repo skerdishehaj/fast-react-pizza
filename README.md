@@ -35,11 +35,13 @@ Currently, two official plugins are available:
 
 ### Pages 
 
-1. Home `/` 
-2. Pizza menu `/menu`
-3. Cart `/cart`
-4. Placing a new order `/order/new`
-5. Looking up an order `/order/:orderID`
+|Page|Route|
+|:---|:---|
+|1. Home| `/`| 
+|2. Pizza menu| `/menu`|
+|3. Cart| `/cart`|
+|4. Placing a new order| `/order/new`|
+|5. Looking up an order| `/order/:orderID`|
 
 ---
 
