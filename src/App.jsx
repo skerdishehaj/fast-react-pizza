@@ -4,34 +4,40 @@ import Menu from './features/menu/Menu';
 import Cart from './features/cart/Cart';
 import Order from './features/order/Order';
 import CreateOrder from './features/order/CreateOrder';
+import AppLayout from './ui/AppLayout';
 
 // * Imperative way of using Routing which enables data loading capabilities
-// * Data Loaders , Data Fetchers, Data Actions
+// * Data Loaders, Data Fetchers, Data Actions
 
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <Home />,
-  },
-  {
-    path: '/menu',
-    element: <Menu />,
-  },
-  {
-    path: '/cart',
-    element: <Cart />,
-  },
-  {
-    path: '/order',
-    element: <Order />,
-  },
-  {
-    path: '/order/new',
-    element: <CreateOrder />,
-  },
-  {
-    path: '/order/:orderId',
-    element: <Order />,
+    element: <AppLayout />,
+    children: [
+      {
+        path: '/',
+        element: <Home />,
+      },
+      {
+        path: '/menu',
+        element: <Menu />,
+      },
+      {
+        path: '/cart',
+        element: <Cart />,
+      },
+      {
+        path: '/order',
+        element: <Order />,
+      },
+      {
+        path: '/order/new',
+        element: <CreateOrder />,
+      },
+      {
+        path: '/order/:orderId',
+        element: <Order />,
+      },
+    ],
   },
 ]);
 
@@ -40,4 +46,3 @@ function App() {
 }
 
 export default App;
-

@@ -72,5 +72,5 @@ Currently, two official plugins are available:
 |features|all feature components|
 |ui|all other ***reusuable presentational componenets*** such as Buttons, Inputs, etc|
 |services|reusuable code for ***interacting with an API***|
-|utilities|***resusuable stateless helper*** functions that we can re-use on multiple places on the app, taht do not *create any side-effects*|
+|utils|***resusuable stateless helper*** functions that we can re-use on multiple places on the app, taht do not *create any side-effects*|
 |pages & hooks| will be included in the corrensponding feature folder|
