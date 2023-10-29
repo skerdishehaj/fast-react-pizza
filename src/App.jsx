@@ -1,36 +1,36 @@
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import Home from './ui/Home';
-import Menu from './features/menu/Menu';
-import Cart from './features/cart/Cart';
-import Order from './features/order/Order';
-import CreateOrder from './features/order/CreateOrder';
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Home from "./ui/Home";
+import Menu from "./features/menu/Menu";
+import Cart from "./features/cart/Cart";
+import Order from "./features/order/Order";
+import CreateOrder from "./features/order/CreateOrder";
 
 // * Imperative way of using Routing which enables data loading capabilities
 // * Data Loaders , Data Fetchers, Data Actions
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <Home />,
   },
   {
-    path: '/menu',
+    path: "/menu",
     element: <Menu />,
   },
   {
-    path: '/cart',
+    path: "/cart",
     element: <Cart />,
   },
   {
-    path: '/order',
+    path: "/order",
     element: <Order />,
   },
   {
-    path: '/order/new',
+    path: "/order/new",
     element: <CreateOrder />,
   },
   {
-    path: '/order/:orderId',
+    path: "/order/:orderId",
     element: <Order />,
   },
 ]);
@@ -40,4 +40,3 @@ function App() {
 }
 
 export default App;
-
