@@ -33,11 +33,11 @@ Currently, two official plugins are available:
 3. Cart
 4. Order
 
-### Pages 
+### Pages
 
 |Page|Route|
 |:---|:---|
-|1. Home| `/`| 
+|1. Home| `/`|
 |2. Pizza menu| `/menu`|
 |3. Cart| `/cart`|
 |4. Placing a new order| `/order/new`|
@@ -53,7 +53,7 @@ Currently, two official plugins are available:
 |:---:|:---:|:---:|
 |1. User | Global UI|No account to fetch, so stays in app|
 |2. Menu | Global remote|Menu is fetched from *API*|
-|3. Cart | Global UI|No need for *API*, just storen in app|
+|3. Cart | Global UI|No need for *API*, just store in app|
 |4. Order | Global remote|Fetched and submitter to *API*|
 
 ### Technology Decisions
@@ -72,7 +72,7 @@ Currently, two official plugins are available:
 |Folder|Explanation|
 |:---:|:---:|
 |features|all feature components|
-|ui|all other ***reusuable presentational componenets*** such as Buttons, Inputs, etc|
-|services|reusuable code for ***interacting with an API***|
-|utils|***resusuable stateless helper*** functions that we can re-use on multiple places on the app, taht do not *create any side-effects*|
-|pages & hooks| will be included in the corrensponding feature folder|
+|ui|all other ***reusable presentational components*** such as Buttons, Inputs, etc|
+|services|reusable code for ***interacting with an API***|
+|utils|***reusable stateless helper*** functions that we can re-use on multiple places on the app, that do not *create any side-effects*|
+|pages & hooks| will be included in the corresponding feature folder|
