@@ -67,7 +67,7 @@ Currently, two official plugins are available:
 
 ---
 
-#### This project is organized in a feature-based structure
+### This project is organized in a feature-based structure
 
 |Folder|Explanation|
 |:---:|:---:|
@@ -76,3 +76,14 @@ Currently, two official plugins are available:
 |services|reusable code for ***interacting with an API***|
 |utils|***reusable stateless helper*** functions that we can re-use on multiple places on the app, that do not *create any side-effects*|
 |pages & hooks| will be included in the corresponding feature folder|
+
+### This project is styled using Tailwind CSS
+
+|Pros|Cons|
+|:---|:---|
+|**You do not have to think about class names**|**Markup (HTML or JSX) looks very unreadable, with lots of class names** (*you get used to it*)|
+|**No jumping between files to write markup and styles**|You have to learn a lot of class names (*but after a day of usage you know fundamentals*)|
+|Immediately understand styling in any project that uses tailwind|You need to install and set up tailwind on each new project|
+|Is a design system: many design decisions have been taken for you, which makes UIs look better and more consistent|You are giving up on "vanilla CSS"|
+|Saves a lot of time, e.g. on responsive design||
+|Docs and VS Code integration are great||
