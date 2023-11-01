@@ -8,7 +8,6 @@ function SearchOrder() {
     e.preventDefault();
     if (!query) return;
     navigate(`/order/${query}`);
-    console.log(query);
     setQuery('');
   };
   return (
