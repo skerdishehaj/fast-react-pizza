@@ -11,9 +11,10 @@ Currently, two official plugins are available:
 
 ## Project Requirements from the 'Business' | Step 1
 
-- [ ] Requires **no user accounts** and no login: users just input their names before using the app
-- [ ] Very simple application, where users can order **one or more pizzas from a menu**
+- [x] Requires **no user accounts** and no login: users just input their names before using the app
+- [x] Very simple application, where users can order **one or more pizzas from a menu**
 - [x] The pizza menu can change, so it should be **loaded from an API**
+- [x] Ordering requires just the user's name, phone number, and address
 - [ ] Users can add multiple pizzas to **cart** before ordering
 - [ ] If possible, **GPS location** should also be provided, to make delivery easier
 - [ ] Users can **mark their order as "priority"** for an additional 20% of the cart price
