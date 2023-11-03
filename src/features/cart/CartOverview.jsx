@@ -4,6 +4,7 @@ import { getTotalCartPrice, getTotalCartQuantity } from './cartSlice';
 
 function CartOverview() {
   const totalCartQuantity = useSelector(getTotalCartQuantity);
+  console.log(totalCartQuantity);
   const totalCartPrice = useSelector(getTotalCartPrice);
   if (totalCartQuantity === 0) {
     return null;
