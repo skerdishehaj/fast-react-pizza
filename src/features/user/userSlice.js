@@ -55,7 +55,8 @@ const userSlice = createSlice({
 
     builder.addCase(fetchAddress.rejected, (state, action) => {
       state.status = 'error';
-      state.error = action.error.message;
+      state.error =
+        'There was a problem getting your address. Make sure to fill this field!';
     });
 
     builder.addCase(fetchAddress.fulfilled, (state, action) => {
@@ -69,4 +70,5 @@ const userSlice = createSlice({
 export const { updateUsername } = userSlice.actions;
 
 export default userSlice.reducer;
-export const getUser = (state) => state.user.username;
+export const getUsername = (state) => state.user.username;
+export const getUser = (state) => state.user;
