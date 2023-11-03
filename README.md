@@ -16,7 +16,7 @@ Currently, two official plugins are available:
 - [x] The pizza menu can change, so it should be **loaded from an API**
 - [x] Ordering requires just the user's name, phone number, and address
 - [x] Users can add multiple pizzas to **cart** before ordering
-- [ ] If possible, **GPS location** should also be provided, to make delivery easier
+- [x] If possible, **GPS location** should also be provided, to make delivery easier
 - [x] Users can **mark their order as "priority"** for an additional 20% of the cart price
 - [x] Orders are made by **sending a POST request** with the order data (user data + selected pizzas) to the API
 - [x] Payments are made on delivery, so no **payment processing** is necessary in the app
