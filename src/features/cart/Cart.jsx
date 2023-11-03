@@ -1,6 +1,7 @@
 import LinkButton from '../../ui/LinkButton';
 import Button from '../../ui/Button';
 import CartItem from './CartItem';
+import EmptyCart from './EmptyCart';
 import { useSelector } from 'react-redux';
 import { clearCart, getCart } from './cartSlice';
 import { getUser } from '../user/userSlice';
@@ -15,8 +16,10 @@ function Cart() {
     console.log('Clear cart');
     dispatch(clearCart());
   };
-  // const cart = fakeCart;
 
+  if (cart.length === 0) {
+    return <EmptyCart />;
+  }
   return (
     <div className="px-4 py-3">
       <LinkButton to="/menu">&larr; Back to menu</LinkButton>
@@ -31,25 +34,14 @@ function Cart() {
         ))}
       </ul>
 
-      {
-        <div className="mt-6 space-x-4">
-          {cart.length > 0 ? (
-            <>
-              <Button type="primary" to="/order/new">
-                Order pizzas
-              </Button>
-              <Button onClick={handleClearCart} type="secondary">
-                Clear Cart
-              </Button>
-            </>
-          ) : (
-            <p className="text-stone-500">
-              Your cart is empty. <LinkButton to="/menu">Go to menu</LinkButton>{' '}
-              to add pizzas.
-            </p>
-          )}
-        </div>
-      }
+      <div className="mt-6 space-x-4">
+        <Button type="primary" to="/order/new">
+          Order pizzas
+        </Button>
+        <Button onClick={handleClearCart} type="secondary">
+          Clear Cart
+        </Button>
+      </div>
     </div>
   );
 }
