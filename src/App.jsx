@@ -8,6 +8,7 @@ import CreateOrder, {
 import Home from './ui/Home';
 import AppLayout from './ui/AppLayout';
 import Error from './ui/Error';
+import { action as updateOrderAction } from './features/order/UpdateOrder';
 
 // * Imperative way of using Routing which enables data loading capabilities
 // * Data Loaders, Data Fetchers, Data Actions
@@ -36,6 +37,7 @@ const router = createBrowserRouter([
         element: <Order />,
         loader: orderLoader,
         errorElement: <Error />,
+        action: updateOrderAction,
       },
     ],
   },

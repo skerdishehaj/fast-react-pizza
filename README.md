@@ -21,7 +21,7 @@ Currently, two official plugins are available:
 - [x] Orders are made by **sending a POST request** with the order data (user data + selected pizzas) to the API
 - [x] Payments are made on delivery, so no **payment processing** is necessary in the app
 - [x] Each order will get a **unique ID** that should be displayed, so the **user can later look up their order** based on the ID
-- [ ] Users should be able to mark their order as a "priority" order **even after it has been placed**
+- [x] Users should be able to mark their order as a "priority" order **even after it has been placed**
 
 ---
 
